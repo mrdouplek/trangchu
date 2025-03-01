@@ -1,0 +1,44 @@
+.banner {
+background: url("anhlop.jpg") no-repeat center center;
+background-size:cover;
+padding-top: 6rem;
+padding-bottom: 12rem;
+text-align: center !important;
+color: darkred !important;
+height: 550px;
+font-size: 30px;
+}
+.slogan {
+ text-align: center !important;
+ width: 100%;
+}
+.row {
+ display: flex;
+ flex-wrap: wrap;
+ margin-top:-1;
+ max-width: 100%;
+ padding-right: 3rem;
+ padding-left: 3rem;
+ background-color: lightgrey;
+}
+.block_3 {
+flex : 0 0 auto;
+width:30%;
+margin:10px;
+}
+.footer {
+background-color: lightgrey;
+margin:1px;
+padding:10px;
+}
+.clickable-image {
+    display: block;          /* Hiển thị ảnh theo dạng block để có thể căn giữa */
+    margin: 20px auto;         /* Căn giữa ảnh và tạo khoảng cách trên dưới */
+    max-width: 50%;           /* Giới hạn chiều rộng của ảnh */
+    height: 250px;             /* Giữ tỉ lệ ảnh */
+    border: 1px solid #ccc;   /* Viền cho ảnh */
+    cursor: pointer;          /* Thay đổi con trỏ khi di chuột, báo hiệu ảnh có thể nhấp được */
+  }
+  .cot{width: 50%;}
+  .tan{width: 50%;}
+  .table { width: 1000px;}

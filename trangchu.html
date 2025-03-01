@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang chủ lớp 12A6	</title>
+	<meta charset='utf-8'>
+	<link href='styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="ô tìm kiếm">
+		<form id="searchForm">
+		  <input type="text" id="searchInput" placeholder="Tìm kiếm thông tin bạn bè...">
+		  <button type="submit">Tìm kiếm</button>
+		</form>
+	  </div>
+	  <script>
+		function searchNames() {
+		  let input = document.getElementById("searchInput").value.toLowerCase();
+		  let students = document.querySelectorAll(".student");
+	
+		  students.forEach(student => {
+			let name = student.getAttribute("data-name").toLowerCase();
+			if (name.includes(input)) {
+			  student.style.display = "block"; // Hiển thị nếu tìm thấy
+			} else {
+			  student.style.display = "none"; // Ẩn nếu không tìm thấy
+			}
+		  });
+		}
+	  </script>
+      <header>
+	      <div class='banner'>
+   		   <h1>GIỚI THIỆU LỚP 12A6</h1>
+	      </div>
+	      <div class='slogan'>
+		    <div class='row'>
+			<div class='block_3'>
+				<h2>NĂNG ĐỘNG</h2>
+				<p>Hoạt động nhiệt tình và hiệu quả</p>
+			</div>
+			<div class='block_3'>
+				<h2>VUI VẺ</h2>
+				<p>Thành viên hài hước và hòa thuận</p>
+		        </div>
+			<div class='block_3'>
+				<h2>NĂNG LỰC</h2>
+				<p>Sai đẹp triêu</p>
+		    </div>
+	      </div>
+		</header>
+	<table>
+		<tr>
+		  <td class="cot">
+		    <a href="thongtinvedat.html">
+		     <img src="đạt.jpg" alt="Giới thiệu về Đạt" class="clickable-image">
+		   </a>
+		   <p>Hồ Tuấn Đạt</p>
+		  </td>
+		  <td class="tan">
+		     <a href="thongtinvephuoc.html" class="hocsinh" data-name="Đạt">
+		    <img src="phước.jpg" alt="Giới thiệu về Phước" class="clickable-image">
+		   </a>
+		   </td>
+		</tr>
+		<tr>
+			<td class="cot">
+				<a href="thongtinvedikhang.html">
+		  		<img src="duykhang.jpg" alt="Giới thiệu về Duy Khang" class="clickable-image">
+				</a>
+			</td>
+		<td class="tan">
+		<a href="thongtinvekhoa.html">
+		  <img src="khoa.jpg" alt="Giới thiệu về Khoa" class="clickable-image">
+		</a>
+		</td>
+		</tr>
+		<tr>
+			<td class="cot">
+		<a href="thongtinvevinh.html">
+		  <img src="vĩnh.jpg" alt="Giới thiệu về Vĩnh" class="clickable-image">
+		</a>
+		</td>
+			<td class="tan">
+				<a href="thongtinvehuy.html">
+				<img src="huy.jpg" alt="Giới thiệu về Huy" class="clickable-image">
+			</td>
+			</tr>
+		</table> 
+      <footer>
+	<div class='row'>
+	   <div style='width:60%'>
+		<p>Thành viên nhóm 2:</p>
+		  <ul>
+		   <p>Facebook liên hệ: </p>
+		   <li><a href='https://www.facebook.com/share/1A4aWevnYj/'>Võ Kim Khoa</a></li>
+		   <li><a href='https://www.facebook.com/share/19yq21YHLB/'>Phạm Đỗ Gia Huy</a></li>
+		   <li><a href='https://www.facebook.com/share/1F3HCQpjsm/'>Phạm Vạn Phước</a></li>
+		   <li><a href='https://www.facebook.com/share/16GTuo1cnx/'>Huỳnh Thế Vĩnh</a></li>
+		   <li><a href='https://www.facebook.com/share/1DDm6oUuER/'>Đặng Duy Khang</a></li>
+		   <li><a href='https://www.facebook.com/share/15ZaKCmDpi/'>Hồ Tuấn Đạt</a></li>
+		 </ul>
+	    </div>
+	    <div style='width:10%'></div>
+	</div>
+      </footer>
+
+</body>
+</html>
